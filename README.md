@@ -15,13 +15,14 @@ From this part you can follow in two ways.
 
 ### Use heroku as remote
 To push the changes you can create a heroku remote, and push the changes.
+
 5. `heroku git:remote -a <APPNAME>`. In this case, it is `heroku git:remote -a kranos-sub`.
 6. `git push heroku master` (or the name of the branch)
 
 ### Use github as remote
 5. First, link the remote to github: `git remote add origin <REMOTE GIT>`.
 6. Then, push `git push origin master`.
-To build the app in heroku, you'll need to set a connection between heroku and github. To do that, on the `Deploy` tab of your project, in `Deployment method` select *GitHub* and connect the app to the repo. With that, each time you push in GitHub Heorku will build your app.
+7. To build the app in heroku, you'll need to set a connection between heroku and github. To do that, on the `Deploy` tab of your project, in `Deployment method` select *GitHub* and connect the app to the repo. With that, each time you push in GitHub Heorku will build your app.
 
 This option is handy because you can keep only the GitHub remote instead of having to push to Heroku and GitHub.
 
