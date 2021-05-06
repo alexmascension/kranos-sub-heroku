@@ -11,6 +11,6 @@ RUN apt-get install -y build-essential zlib1g-dev libncurses5-dev libgdbm-dev li
 RUN apt-get install -y python3.8 python3-pip python3-requests
 RUN pip3 install cellxgene
 
-RUN wget https://zenodo.org/record/4740538/files/joined_sub.h5 -O /home/joined_sub.h5
+RUN wget https://zenodo.org/record/4740671/files/joined_sub.h5ad -O /home/joined_sub.h5ad
 
 # ENTRYPOINT ["cellxgene"]  # Heroku doesn't work well with ENTRYPOINT
