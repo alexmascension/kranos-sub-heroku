@@ -1,0 +1,5 @@
+build:
+  docker:
+    web: Dockerfile
+run:
+  web: cellxgene launch /home/joined_sub.h5 --host 0.0.0.0 --port $PORT --disable-annotations
